@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 class="my-3">{{ title }}</h1>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div *ngFor="let albumItem of albumItems" class="col">
+          <div class="card card-item mb-4" style="width: 18rem;">
+            <img src="{{ albumItem.thumbnailUrl }}" class="card-img-top" alt="Thumbnail Url">
+            <div class="card-body">
+              <h5 class="card-title">{{ (albumItem.title.length>47)? (albumItem.title | slice:0:47)+'...':(albumItem.title) }}</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="card-text">Album Id: {{ albumItem.albumId}} | Id: {{ albumItem.id }}</div>
+                <a href="#" (click)="openFlyin(albumDetail, albumItem)" class="btn btn-small btn-primary">View Album</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #albumDetail let-modal>
+  <app-album-detail albumURL={{albumURL}} albumTitle={{albumTitle}} albumID={{albumID}} albumRealID={{albumRealID}}></app-album-detail>
+</ng-template>
