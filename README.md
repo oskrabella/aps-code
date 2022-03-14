@@ -17,12 +17,19 @@ This task is intended to not take up too much of your time and take approximatel
 
 Further information:
 -API to be used: https://jsonplaceholder.typicode.com/photos
+
 -Angular should be used as the front-end framework
+
 -Use any open-source libraries you would like
+
 -Use your preferred design pattern and coding standards
+
 -Automated unit testing required
+
 -Provide a well laid out screen with good CSS practices. (Use your imagination)
+
 -Add a read me file with commands to compile, test and run the application
+
 Please send any questions you have via email
 
 # ApsCode
