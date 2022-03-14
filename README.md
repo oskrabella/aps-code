@@ -16,6 +16,7 @@ Create a single page Angular application that takes response from an API and dis
 This task is intended to not take up too much of your time and take approximately 1 hour. The completed source code should be shared via github.
 
 Further information:
+
 -API to be used: https://jsonplaceholder.typicode.com/photos
 
 -Angular should be used as the front-end framework
